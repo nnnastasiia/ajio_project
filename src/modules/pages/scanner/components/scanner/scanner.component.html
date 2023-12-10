@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="message" *ngIf="(noImage$ | async) === true">
+    Add an image of receipt
+  </div>
+  <img #imageElement src="" />
+</div>
+<ion-list [inset]="true" *ngIf="(noImage$ | async) === false">
+  <ion-item>
+    <ion-icon
+      color="warning"
+      slot="start"
+      name="calendar-outline"
+      size="large"
+    ></ion-icon>
+    <ion-label>{{ recognizedDate$ | async }}</ion-label>
+    <ion-note slot="end">Recognized Data</ion-note>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon
+      color="warning"
+      slot="start"
+      name="wallet-outline"
+      size="large"
+    ></ion-icon>
+    <ion-label>{{ recognizeSum$ | async }} PLN</ion-label>
+    <ion-note slot="end">Recognized Sum</ion-note>
+  </ion-item>
+</ion-list>

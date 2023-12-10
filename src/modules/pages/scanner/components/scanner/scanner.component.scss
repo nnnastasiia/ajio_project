@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .message {
+    padding: 100px 20px;
+    font-size: large;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ion-list {
+  margin-bottom: 100px !important;
+}

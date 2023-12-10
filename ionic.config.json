@@ -1,0 +1,7 @@
+{
+  "name": "Cents Track",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

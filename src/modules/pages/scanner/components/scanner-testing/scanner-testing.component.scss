@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ion-range {
+  padding: 5px 20px;
+}
+
+ion-list {
+  margin-bottom: 100px !important;
+}
